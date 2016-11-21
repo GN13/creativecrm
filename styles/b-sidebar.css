@@ -1,0 +1,53 @@
+.b-sidebar {
+	display: flex;
+	flex-direction: column;
+	background-color: #303841;
+	width: 20%;
+}
+
+.b-sidebar__logo {
+	color: #ffc12d;
+	font-size: 1.75em; /*Is a media-query needed here or not?*/
+	font-weight: 900;
+	line-height: 0.857;
+	padding: 46px 0 50px 7.1%;
+}
+
+.b-sidebar__item {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.07);
+	color: #fff;
+	font-size: 1.081em;
+	font-weight: 300;
+	line-height: 1.388;
+	padding-left: 7.1%;
+}
+
+.b-sidebar__item-icon {
+	padding-right: 10px;
+	color: #fff;
+}
+
+.b-sidebar__item:nth-child(2) {
+	padding-bottom: 23px;
+}
+
+.b-sidebar__item:nth-child(3) {
+	padding-top: 20px;
+	padding-bottom: 16px;
+}
+
+.b-sidebar__item--active {
+	background-color: #442a9d;
+	padding: 25px 0 25px calc(7.1% - 5px);
+	border-left: 5px solid #ffc12d;
+}
+
+.b-sidebar__item:nth-child(5) {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.b-sidebar__item:nth-child(6) {
+	padding-top: 14px;
+	padding-bottom: 14px;
+}

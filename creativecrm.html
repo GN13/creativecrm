@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Creative CRM</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="styles/creativecrm.css">
+	<link rel="stylesheet" type="text/css" href="styles/b-sidebar.css">
+	<link rel="stylesheet" type="text/css" href="styles/b-top-panel.css">
+	<link rel="stylesheet" type="text/css" href="styles/b-customer-data.css">
+	<link rel="stylesheet" type="text/css" href="styles/b-statistics.css">
+	<link rel="stylesheet" type="text/css" href="styles/b-activity.css">
+	<link rel="stylesheet" type="text/css" href="styles/media-query.css">	
+
+</head>
+<body>
+<nav class="b-sidebar">
+	<h1 class="b-sidebar__logo">CreativeCRM</h1>
+	<div class="b-sidebar__item">
+		<i class="b-sidebar__item-icon fa fa-tachometer" aria-hidden="true"></i>
+		<span>Dashboard</span>
+	</div>
+	<div class="b-sidebar__item">
+		<i class="b-sidebar__item-icon fa fa-pie-chart" aria-hidden="true"></i>
+		<span>Reports</span>
+	</div>
+	<div class="b-sidebar__item b-sidebar__item--active">
+		<i class="b-sidebar__item-icon fa fa-briefcase" aria-hidden="true"></i>
+		<span>Customers</span>
+	</div>
+	<div class="b-sidebar__item">
+		<i class="b-sidebar__item-icon fa fa-calendar" aria-hidden="true"></i>
+		<span>Calendar</span>
+	</div>
+	<div class="b-sidebar__item">
+		<i class="b-sidebar__item-icon fa fa-tasks" aria-hidden="true"></i>
+		<span>Tasks</span>
+	</div>
+</nav>
+
+<div class="b-main">
+	<header class="b-top-panel">
+		<div class="b-top-panel__breadcrums">
+			<span class="b-top-panel__breadcrums--inactive">Customers</span>
+			<i class="b-top-panel__breadcrums-icon fa fa-chevron-right" aria-hidden="true"></i>
+			<span class="b-top-panel__breadcrums--active">Max Jones</span>
+		</div>
+		<div class="b-top-panel__right-section">
+			<div style="position: relative; margin-right: 40px;">
+				<input class="b-top-panel__search" id="search" name="search" type="search" placeholder="SEARCH" />
+				<span class="b-top-panel__search-icon fa fa-search"></span>
+			</div>
+			<div class="b-top-panel__notification">
+				<i class="b-top-panel__notification-icon fa fa-envelope" aria-hidden="true">
+					<span class="b-top-panel__notification-circle">1</span>
+				</i>				
+				<i class="b-top-panel__notification-icon fa fa-bell" aria-hidden="true">
+					<span class="b-top-panel__notification-circle">4</span>
+				</i>				
+			</div>
+			<div class="b-user">
+				<div class="crop1">
+					<img class="b-user-avatar" src="img/avatar.png" alt="avatar" />
+				</div>
+				<span class="b-top-panel__greeting">Hello Lauren</span>	
+				<i class="b-top-panel__greeting-icon fa fa-chevron-down" aria-hidden="true"></i>
+			</div>	
+		</div>	
+	</header>	
+
+	<div class="b-profile">
+		<div class="b-customer-data">
+			<div class="crop2">
+				<img class="b-customer-data__avatar" src="img/max-jones.png" alt="Max Jones" />
+			</div>
+			<section class="b-customer-data__main-wrapper">
+				<div class="b-customer-data__wrapper">
+					<div class="b-customer-data__information">
+						<span class="b-customer-data__information-name">MAX JONES
+							<span class="b-customer-data__information-status">GOLD</span>
+						</span>					
+						<span class="b-customer-data__information-sphere">Sales &amp; Marketing</span>
+					</div>
+					<div class="b-customer-data__social">
+						<span class="b-customer-data__social-invitation">INVITE TO SOCIAL</span>
+						<div>
+							<a class="b-customer-data__social-img" href="#"><img src="img/linkedin.png" alt="linkedin" width="19" height="18" /></a>
+							<a class="b-customer-data__social-img" href="#"><img src="img/fb.png" alt="facebook" width="19" height="20" /></a>
+							<a class="b-customer-data__social-img" href="#"><img src="img/twitter.png" alt="twitter" width="20" height="17" /></a>
+						</div>
+					</div>
+				</div>
+
+				<section class="b-customer-data__contacts">
+					<div class="b-customer-data__contacts-item">
+						<span class="b-customer-data__contacts-type">PHONE</span>
+						<span class="b-customer-data__contacts-info">(+31) 140 175 468</span>
+					</div>
+					<div class="b-customer-data__contacts-item">
+						<span class="b-customer-data__contacts-type">EMAIL</span>
+						<span class="b-customer-data__contacts-info">maxjones@gmail.com</span>
+					</div>
+					<div class="b-customer-data__contacts-item">
+						<span class="b-customer-data__contacts-type">ADDRESS</span>
+						<span class="b-customer-data__contacts-info b-customer-data__contacts-info-address">Binnenweg 50, Rotterdam<i class="b-customer-data__contacts-info-icon fa fa-pencil" aria-hidden="true"></i></span>						
+					</div>
+					<button class="b-customer-data__contacts-btn">CREATE QUOTE</button>
+				</section>				
+			</section>		
+		</div>
+
+		<section class="b-customer-data__menu">
+			<span class="b-customer-data__menu-item b-customer-data__menu-item--active">OVERVIEW</span>
+			<span class="b-customer-data__menu-item">ORDERS</span>
+			<span class="b-customer-data__menu-item">PAYMENTS</span>
+			<span class="b-customer-data__menu-item">INTERACTIONS</span>
+			<span class="b-customer-data__menu-item">CUSTOMER FEEDBACK</span>
+		</section>
+	</div>
+
+	<section class="b-statistics">
+		<div class="b-statistics-wrapper">
+			<div class="b-statistics__happiness">
+				<h2 class="b-statistics__happiness-heading">CUSTOMER HAPPINESS</h2>
+				<img src="img/happiness.png" alt="Happiness" width="115" height="114" />
+				<span class="b-statistics__happiness-description">The Product is Awesome</span>
+				<div style="display: flex; align-items: center; width: 90%;">
+					<div class="b-statistics__happiness-status">
+						<div class="b-statistics__happiness-progress"></div>					
+					</div>
+					<span class="b-statistics__happiness-progress-percentage">90%</span>
+				</div>
+			</div>
+			<div class="b-statistics__turnover">
+				<h2 class="b-statistics__turnover-heading">TOTAL TURNOVER</h2>
+				<span class="b-statistics__turnover-figures">&euro;3,297</span>
+				<div class="b-statistics__turnover-gradient">
+					<img src="img/wave1.png" width="100%" height="117" />
+					<img src="img/wave2.png" width="100%" height="75" style="position: absolute; bottom: 0; left: 0;" />
+				</div>
+			</div>
+			<div class="b-statistics__orders">
+				<div class="b-statistics__orders-types">
+					<div class="b-statistics__orders-icons">
+						<i class="fa fa-cube b-statistics__orders-icons--cube" aria-hidden="true"></i>
+					</div>
+					<div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 66%;">
+						<h2 class="b-statistics__orders-heading b-statistics__orders-heading-total">ORDERS TOTAL</h2>
+						<span class="b-statistics__orders-figures">43</span>
+					</div>
+				</div>
+				<div class="b-statistics__orders-types">
+					<div class="b-statistics__orders-icons">
+						<i class="fa fa-database b-statistics__orders-icons--database" aria-hidden="true"></i>
+					</div>
+					<div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 66%;">
+						<h2 class="b-statistics__orders-heading b-statistics__orders-heading-progress">ORDERS IN PROGRESS</h2>
+						<span class="b-statistics__orders-figures">2</span>
+					</div>
+				</div>
+			</div>			
+		</div>	
+		
+		<div class="b-more-statistics">
+			<div class="b-more-statistics__criterion">
+				<h2 class="b-more-statistics__criterion-heading">OPEN TICKETS</h2>
+				<span class="b-more-statistics__criterion-figures">1</span>
+			</div>
+			<div class="b-more-statistics__criterion">
+				<h2 class="b-more-statistics__criterion-heading">UPSELL SUGGESTIONS</h2>
+				<span class="b-more-statistics__criterion-figures">2</span>
+			</div>
+			<div class="b-more-statistics__criterion">
+				<h2 class="b-more-statistics__criterion-heading">OPEN PAYMENTS</h2>
+				<span class="b-more-statistics__criterion-figures">0</span>
+			</div>
+		</div>
+
+		<div class="b-activity">
+			<h2 class="b-activity__heading">Activity</h2>
+			<div class="b-activity__dashboard">
+				<div style="display: flex; align-items: center; flex: 4;">
+					<div class="crop1">
+						<img class="b-user-avatar" src="img/avatar.png" alt="avatar" />
+					</div>
+					<span class="b-activity__dashboard-actions">Added new task <a href="#" class="b-activity__dashboard-actions-link">'Remind customer to complete payment'</a> assigned to Lauren</span>
+				</div>
+				<span class="b-activity__dashboard-date">Today at 4:24PM</span>
+			</div>
+			<div class="b-activity__dashboard">
+				<div style="display: flex; align-items: center; flex: 4;">
+					<div class="crop1">
+						<img class="b-user-avatar" src="img/avatar.png" alt="avatar" />
+					</div>
+					<span class="b-activity__dashboard-actions">Added new upsell suggestion <a class="b-activity__dashboard-actions-link" href="#">Upsell in Customer Support Interactions</a></span>
+				</div>
+				<span class="b-activity__dashboard-date">July 21th</span>
+			</div>
+			<div class="b-activity__dashboard">
+				<div style="display: flex; align-items: center; flex: 4;">
+					<div class="crop1">
+						<img class="b-user-avatar" src="img/avatar.png" alt="avatar" />
+					</div>
+					<span class="b-activity__dashboard-actions">Edited <a class="b-activity__dashboard-actions-link" href="#">'Order #54789B'</a></span>
+				</div>
+				<span class="b-activity__dashboard-date">July 21th</span>
+			</div>
+			<div class="b-activity__dashboard">
+				<div style="display: flex; align-items: center; flex: 4;">
+					<div class="crop1">
+						<img class="b-user-avatar" src="img/avatar.png" alt="avatar" />
+					</div>
+					<span class="b-activity__dashboard-actions">Changed <a class="b-activity__dashboard-actions-link" href="#">Invoice Address</a> for <a class="b-activity__dashboard-actions-link" href="#">Order #47893N</a></span>
+				</div>
+				<span class="b-activity__dashboard-date">June 23rd</span>
+			</div>
+		</div>
+		
+	</section>
+</div>
+</body>
+</html>
